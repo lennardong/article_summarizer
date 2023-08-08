@@ -1,49 +1,49 @@
-<h1> Text-MiningGP12</h1>
+# Text-MiningGP12
 
-These are the files and data used for generation. <br>
+These are the files and data used for generation.
 
-Do note the order to run the files and some of their dependencies.<br>
-Depending on your current environment, there may be more packages required.<br>
-Running of notebooks with the relevant folders are to be done on your machine locally. <br>
+Do note the order to run the files and some of their dependencies.
+Depending on your current environment, there may be more packages required.
+Running of notebooks with the relevant folders are to be done on your machine locally.
 
-<h2>Dependencies</h2>
-- seaborn <br>
-- sentencepiece <br>
-- textacy <br>
-- en_core_web_lg <br>
-- en_core_web_md <br>
-- openai (and an api key for the code to work) <br>
+## Dependencies
+- seaborn
+- sentencepiece
+- textacy
+- en_core_web_lg
+- en_core_web_md
+- openai (and an api key for the code to work)
 
-<h2>Required folders</h2>
-- data <br>
-- models <br>
-- results <br>
-<br>
+## Required folders
+- data
+- models
+- results
 
-<h2>Notebook Sequence</h2>
-<h3>EDA</h3>
-- T5_00_EDA_LO.ipynb (used for EDA of WebNLG Triplet Format) <br>
+## Notebook Sequence
 
-<h3>For Text Preprocessing </h3>
-- covar_00_bbcBatch_LO.ipynb (used to batch preprocess documents, replace text with covariance resolution) <br>
-- triplets_01_clean_LO.ipynb (triple generation, greedy) <br>
-- triplets_02_tripleFormatting_LO.ipynb (triple generation, strict) <br>
-<br>
-<h3>For LLM Fine Tuning </h3>
-All these are Kaggle notebooks <br>
-- GPT_00_fineTuning.ipynb <br>
-- T5_01_train8epoch.ipynb <br>
-- T5_01_train16epoch.ipynb <br>
-<br>
-<h3>For Text Generation </h3>
-All export to a folder called “results” <br>
-- GPT_01_textGenDistil_LO.ipynb <br>
-- GPT_01_textGenDistilFiltered_LO.ipynb <br>
-- GPT_01_textGenGPT2med_LO.ipynb <br>
-- ChatGPT_01_promptedTextGen.ipynb <br>
-- T5_02_textGen8epoch.ipynb <br>
-- T5_02_textGen16Epoch_LO.ipynb <br>
-<br>
-<h3>For Evaluation </h3>
-- scoring_BatchSimplicityIndex_LO.ipynb <br>
-- util_simplicityIndex.py (this is imported into other notebooks)  <br>
+### EDA
+- T5_00_EDA_LO.ipynb (used for EDA of WebNLG Triplet Format)
+
+### For Text Preprocessing
+- covar_00_bbcBatch_LO.ipynb (used to batch preprocess documents, replace text with covariance resolution)
+- triplets_01_clean_LO.ipynb (triple generation, greedy)
+- triplets_02_tripleFormatting_LO.ipynb (triple generation, strict)
+
+### For LLM Fine Tuning
+All these are Kaggle notebooks
+- GPT_00_fineTuning.ipynb
+- T5_01_train8epoch.ipynb
+- T5_01_train16epoch.ipynb
+
+### For Text Generation
+All export to a folder called “results”
+- GPT_01_textGenDistil_LO.ipynb
+- GPT_01_textGenDistilFiltered_LO.ipynb
+- GPT_01_textGenGPT2med_LO.ipynb
+- ChatGPT_01_promptedTextGen.ipynb
+- T5_02_textGen8epoch.ipynb
+- T5_02_textGen16Epoch_LO.ipynb
+
+### For Evaluation
+- scoring_BatchSimplicityIndex_LO.ipynb
+- util_simplicityIndex.py (this is imported into other notebooks)
